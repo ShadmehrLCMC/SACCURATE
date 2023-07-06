@@ -23,16 +23,16 @@ Accurate saccade detection is crucial in neuroscience tasks related to reward, m
 
 ## <a name="SACCURATE-main-window">SACCURATE Main Window</a> 
 
-![SACCURATE Main Window](https://d1y8sb8igg2f8e.cloudfront.net/images/shutterstock_1375463840.width-800.jpg)
+![Main Window](https://github.com/ShadmehrLCMC/SACCURATE/blob/main/illustrations/main_window.png)
 
 The main window of SACCURATE is displayed above, including [time trace module](#time-trace-module) on the left, [saccade feature module](#saccade-feature-module) on the upper right and [trajectory module](#trajectory-module) on the lower right. For more detailed descriptions of each module, please refer to the sections below.
 
-![SACCURATE Main Window](https://d1y8sb8igg2f8e.cloudfront.net/images/shutterstock_1375463840.width-800.jpg)
+![Toolbar](https://github.com/ShadmehrLCMC/SACCURATE/blob/main/illustrations/toolbar.png)
 
 
 At the top of the interface, you'll find a convenient toolbar with quick functions for easy access. These functions include options to open a file, save a file, redo the previous action (with up to 5 steps in the history), discard all changes, navigate to the start of the recording, and navigate to the end of the recording. The toolbar is organized from left to right. Additionally, there is a panel that displays the name of the file you are currently editing, allowing you to keep track of your progress.
 
-![SACCURATE Main Window](https://d1y8sb8igg2f8e.cloudfront.net/images/shutterstock_1375463840.width-800.jpg)
+![Helpme Figure](https://github.com/ShadmehrLCMC/SACCURATE/blob/main/illustrations/helpme_figure.png)
 
 At the bottom of the interface, there is an instructional figure that serves as a quick reminder of how to use the GUI. Additionally, you can click on the "Help" option in the top panel for more detailed descriptions and guidance. Below, you will find a list of instructions for reference:
 
@@ -68,7 +68,7 @@ You can find more details about these usage from modules descriptions below.
 
 ## <a name="time-trace-module">Time Trace Module</a> 
 
-![SACCURATE Main Window](https://d1y8sb8igg2f8e.cloudfront.net/images/shutterstock_1375463840.width-800.jpg)
+![Time Trace Plot](https://github.com/ShadmehrLCMC/SACCURATE/blob/main/illustrations/time_trace_plot.png)
 
 This module is located on the left side of the main window and displays a detailed signal trace over time, allowing for modifications. There are five traces in total: X position trace (in degrees), Y position trace (in degrees), unfiltered absolute velocity (in degrees per millisecond), saccade reference trace, and saccade trace, listed from top to bottom.
 
@@ -78,7 +78,7 @@ The saccade reference trace is optional and only serves as a reference; you cann
 
 You can also align the saccade onset and offset to the X, Y, and velocity traces by "selecting" the saccade and coloring it green. To view saccades outside of the current time window, you can either move the time window forward and backward or directly select and go to the next or previous saccade on the saccade trace or saccade reference trace. Shortcut commands are provided to adjust the time window size, adjust the length of the time window movement, show/hide the target trace, erase the currently selected saccade, or undo the previous step. Please refer to the [Instruction Table](#instruction-table) for further details.
 
-![SACCURATE Main Window](https://d1y8sb8igg2f8e.cloudfront.net/images/shutterstock_1375463840.width-800.jpg)
+![Statistics](https://github.com/ShadmehrLCMC/SACCURATE/blob/main/illustrations/statistics.png)
 
 At the bottom of the interface, you can find the current statistics of various parameters:
 
@@ -96,7 +96,7 @@ These parameters provide you with important information about the data and the c
 
 ## <a name="saccade-feature-module">Saccade Feature Module</a> 
 
-![SACCURATE Main Window](https://d1y8sb8igg2f8e.cloudfront.net/images/shutterstock_1375463840.width-800.jpg)
+![Feature Plot](https://github.com/ShadmehrLCMC/SACCURATE/blob/main/illustrations/feature_plot.png)
 
 
 This module is displayed on the upper right of the main window and presents the feature space of all saccades on the saccade trace or saccade reference trace. The available features include:
@@ -130,9 +130,9 @@ To modify the saccade features displayed, you can use the dropdown button locate
 
 Furthermore, you can select which trace to display the saccades from: either the saccade trace or the saccade reference trace. Additionally, you can choose to view all saccades, inclusive saccades only (those that match with another trace's saccade detection), or exclusive saccades only (those not detected by another trace). The mode selection determines which saccades are visible on the plot.
 
-If you wish to view specific saccades on the time trace that correspond to certain positions in the feature space, you can draw a polygonal region of interest (ROI) in the feature space. When selecting and navigating to previous or next saccades on the time trace, the GUI will only take you to saccades that fall within the ROI. This allows you to focus on outlier saccades that are more likely to be misdetections, saving you time. If you're uncertain about how to draw a polygon to capture the outlier saccades, you can use the outlier detection function located at the top of the time trace plot. By clicking the "Detect" button, the GUI will generate an ROI on the current feature space, including outliers, based on the specified outlier percentage indicated by the slider. You can adjust the slider to change the desired outlier percentage. A higher percentage will result in more outliers being included. It's important to note that this percentage may not accurately reflect the actual percentage of saccades within the ROI, as it can be challenging to draw a polygon only including outliers but not others. Use it as a relative reference for controlling the number of outliers. If you're having difficulty choosing features to detect outliers, you can simply click the "Default Detection" button. This will automatically select the best feature space and the optimal outlier percentage for detection. Specifically, if probability is provided, the detection space includes the Acc/Dec Ratio and confidence. If probability is not given, the detection space includes the Acc/Dec Ratio and Q Factor. The default outlier percentage is set at 8%.
+![Outlier Detector](https://github.com/ShadmehrLCMC/SACCURATE/blob/main/illustrations/outlier_detector.png)
 
-![SACCURATE Main Window](https://d1y8sb8igg2f8e.cloudfront.net/images/shutterstock_1375463840.width-800.jpg)
+If you wish to view specific saccades on the time trace that correspond to certain positions in the feature space, you can draw a polygonal region of interest (ROI) in the feature space. When selecting and navigating to previous or next saccades on the time trace, the GUI will only take you to saccades that fall within the ROI. This allows you to focus on outlier saccades that are more likely to be misdetections, saving you time. If you're uncertain about how to draw a polygon to capture the outlier saccades, you can use the outlier detection function located at the top of the time trace plot. By clicking the "Detect" button, the GUI will generate an ROI on the current feature space, including outliers, based on the specified outlier percentage indicated by the slider. You can adjust the slider to change the desired outlier percentage. A higher percentage will result in more outliers being included. It's important to note that this percentage may not accurately reflect the actual percentage of saccades within the ROI, as it can be challenging to draw a polygon only including outliers but not others. Use it as a relative reference for controlling the number of outliers. If you're having difficulty choosing features to detect outliers, you can simply click the "Default Detection" button. This will automatically select the best feature space and the optimal outlier percentage for detection. Specifically, if probability is provided, the detection space includes the Acc/Dec Ratio and confidence. If probability is not given, the detection space includes the Acc/Dec Ratio and Q Factor. The default outlier percentage is set at 8%.
 
 To facilitate the feature analysis of the currently selected saccade, a green dot is displayed on the feature space to highlight its position when the selected saccade and the saccades chosen on the feature plot are from the same trace. This makes it easier to visually identify the specific saccade of interest. Additionally, at the upper left corner, a saccade counter provides two numbers: the current saccade's position in the overall saccade set shown in the feature space (Global Saccade Counter) and its position among the saccades within the ROI displayed in the feature space (ROI Saccade Counter). The position of saccade is ordered by time.
 
@@ -144,7 +144,7 @@ For instruction on how to draw/cancel roi, zoom in/put and move plot, please see
 
 ## <a name="trajectory-module">Trajectory Module</a>
 
-![SACCURATE Main Window](https://d1y8sb8igg2f8e.cloudfront.net/images/shutterstock_1375463840.width-800.jpg)
+![Trajectory Plot](https://github.com/ShadmehrLCMC/SACCURATE/blob/main/illustrations/trajectory_plot.png)
 
 
 The trajectory module is located on the lower right of the main window. It provides visual representation of the eye movement trajectory during the selected saccade, as well as optional visual target information. The features of this module are as follows:
@@ -172,7 +172,7 @@ Only MATLAB is needed. We recommend using a version higher than 2022a for optima
  
 ## <a name="data-structure">Data Structure</a> 
 
-![SACCURATE Main Window](https://d1y8sb8igg2f8e.cloudfront.net/images/shutterstock_1375463840.width-800.jpg)
+![Data Structure Plot](https://github.com/ShadmehrLCMC/SACCURATE/blob/main/illustrations/data_structure_plot.png)
 
 Data input should be a .mat file. The file can be named whatever you prefer, but it should be a struct named as 'eye_movement_data' with following data inside:
 
