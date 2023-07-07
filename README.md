@@ -199,6 +199,7 @@ Data input should be a .mat file. The file can be named whatever you prefer, but
 | TrialTag |  ***double, size of (sample_point_number, 1), optional*** should only contain integers given from TrialList, indicating which time points belongs to which trial|
 | Probability |  ***double, size of (sample_point_number, 1), optional*** should be larger or equal to 0 and smaller or equal to 1, indicating probability of each time point to be in saccade period or not usually given by deep net|
 | CurationMetadata | ***struct, size of (1, 1), No need to provide*** this struct keep tract of metadata of when curation is done by which computer. There is a string array named 'curator' keeping track of system name and a string array named 'time' keeping track of curation time. This struct will generate automatically each time curation is saved|
+
 **P.S.** Trial related data, target related data, and SaccadeTag are mostly designed for [This Paradigm](#https://www.nature.com/articles/nature15693). They are optional so you can decide whether to use them depending on you experiment paradigm. If your experiment also uses repetitive loop unit, you can use trial related data to show that information. If your experiment also use quickly changing visual target to induce saccade, you could use target related data to show that information. If your experiment would like to separate saccade detected into different classes, you could use SaccadeTag to show this information.
 
 You can also play with our demo dataset to explore more details.
