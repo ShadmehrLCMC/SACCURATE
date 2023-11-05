@@ -202,7 +202,7 @@ Data input should be a .mat file. The file can be named whatever you prefer, but
 
 **P.S.** Trial related data, target related data, and SaccadeTag are mostly designed for [This Paradigm](#https://www.nature.com/articles/nature15693). They are optional so you can decide whether to use them depending on you experiment paradigm. If your experiment also uses repetitive loop unit, you can use trial related data to show that information. If your experiment also use quickly changing visual target to induce saccade, you could use target related data to show that information. If your experiment would like to separate saccade detected into different classes, you could use SaccadeTag to show this information.
 
-You can also play with our [demo dataset](https://github.com/ShadmehrLCMC/SACCURATE/blob/main/demo%20dataset/demo_data_59d_2019-11-08_11-45-24.mat) to explore more details.
+You can also play with our [demo dataset](https://github.com/ShadmehrLCMC/SACCURATE/blob/main/demo%20dataset/demo_data_59d_2019-11-08_11-45-24.mat) to explore more details. To Use the GUI, simply run [SACCURATE.mlapp](https://github.com/ShadmehrLCMC/SACCURATE/tree/main/GUI) in the GUI folder
 
 [back to start](#content)
 
